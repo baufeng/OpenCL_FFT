@@ -375,9 +375,9 @@ int runTest(clFFT_Dim3 n, int batchSize, clFFT_Direction dir, clFFT_Dimension di
 	double t;
 	
 	uint64_t t0, t1;
-	int mx = log2(n.x);
-	int my = log2(n.y);
-	int mz = log2(n.z);
+	int mx = (int)log2(n.x);
+	int my = (int)log2(n.y);
+	int mz = (int)log2(n.z);
 
 	int length = n.x * n.y * n.z * batchSize;
 		
